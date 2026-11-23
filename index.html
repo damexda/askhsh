@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ασκήσεις</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f4f5f7; color: #222; }
+  header { background: #24292f; color: #fff; padding: 18px 20px; }
+  header h1 { margin: 0 0 4px; font-size: 24px; }
+  header p { margin: 0; color: #c9d1d9; font-size: 14px; }
+  main { max-width: 900px; margin: 0 auto; padding: 16px; }
+  .toc { background: #fff; border: 1px solid #d0d7de; border-radius: 8px; padding: 12px; margin-bottom: 18px; }
+  .toc a { display: inline-block; margin: 3px 6px 3px 0; padding: 4px 10px; background: #eef1f5; border-radius: 14px; color: #0b5cad; text-decoration: none; font-size: 14px; }
+  .toc a:hover { background: #dbe7f5; }
+  .card { background: #fff; border: 1px solid #d0d7de; border-radius: 8px; margin-bottom: 18px; overflow: hidden; }
+  .head { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: #f0f2f5; border-bottom: 1px solid #d0d7de; }
+  .head h2 { margin: 0; font-size: 17px; }
+  .num { display: inline-block; min-width: 28px; padding: 2px 8px; margin-right: 6px; background: #24292f; color: #fff; border-radius: 4px; text-align: center; }
+  .lang { font-size: 11px; color: #666; border: 1px solid #bbb; border-radius: 4px; padding: 1px 5px; margin-left: 6px; vertical-align: middle; }
+  .copy { cursor: pointer; border: 1px solid #1a7f37; background: #2da44e; color: #fff; font-size: 14px; padding: 7px 14px; border-radius: 6px; }
+  .copy:hover { background: #218838; }
+  .copy.done { background: #0b5cad; border-color: #0b5cad; }
+  .note { margin: 0; padding: 8px 14px; background: #fff8c5; border-bottom: 1px solid #e6d97a; font-size: 14px; }
+  pre { margin: 0; padding: 14px; overflow-x: auto; background: #fbfbfc; font-family: Menlo, Consolas, "Courier New", monospace; font-size: 14px; line-height: 1.45; tab-size: 2; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ασκήσεις</h1>
+  <p>Πατήστε «Αντιγραφή» δίπλα σε κάθε άσκηση και κάντε επικόλληση (Ctrl+V) στο πρόγραμμα επεξεργασίας σας.</p>
+</header>
+<main>
+  <nav class="toc">
+<a href="#ex0">1. drasthriothta1</a>
+<a href="#ex1">2. maria-giorgos-pinakas</a>
+<a href="#ex2">3. cities</a>
+<a href="#ex3">4. paragrathos-allazei-style</a>
+<a href="#ex4">5. video-apo-ton-ypologisti</a>
+<a href="#ex5">6. video-apo-youtube</a>
+<a href="#ex6">7. photografia-megethos</a>
+<a href="#ex7">9. svg-dianismatiko-grafiko</a>
+<a href="#ex8">10. hxos-me-photo</a>
+<a href="#ex9">11. svg-kykloi</a>
+<a href="#ex10">12. geolocation</a>
+<a href="#ex11">13. diktis-mazas-somatos</a>
+<a href="#ex12">14. trigono</a>
+<a href="#ex13">15. plaisio-me-minima</a>
+<a href="#ex14">16. celsium-to-F</a>
+<a href="#ex15">17. forma-me-post</a>
+<a href="#ex16">18. username-pass-check</a>
+<a href="#ex17">19. companydatabase</a>
+<a href="#ex18">19. customer</a>
+<a href="#ex19">20. php-isagogi-me-post</a>
+<a href="#ex20">25. klasi-roloi</a>
+<a href="#ex21">26. klasi-metr</a>
+  </nav>
+<section class="card" id="ex0">
+  <div class="head">
+    <h2><span class="num">1</span> drasthriothta1 <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Πίνακας&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table style=&quot;border: 4px inset gray; text-align: center; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;tr style=&quot;background-color: red; color: yellow;&quot;&gt;
+      &lt;th&gt;Όνομα&lt;/th&gt;
+      &lt;th&gt;Επώνυμο&lt;/th&gt;
+      &lt;th&gt;Ηλικία&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Μαρία&lt;/td&gt;
+      &lt;td&gt;Γεωργίου&lt;/td&gt;
+      &lt;td style=&quot;font-weight: bold; color: red;&quot;&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ιάκωβος&lt;/td&gt;
+      &lt;td&gt;Παπαπέτρου&lt;/td&gt;
+      &lt;td style=&quot;font-weight: bold; color: red;&quot;&gt;35&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex1">
+  <div class="head">
+    <h2><span class="num">2</span> maria-giorgos-pinakas <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Πίνακας&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table style=&quot;border: 4px inset gray; text-align: center; margin-left: auto; margin-right: auto;&quot;&gt;
+    &lt;tr style=&quot;background-color: red; color: yellow;&quot;&gt;
+      &lt;th&gt;Όνομα&lt;/th&gt;
+      &lt;th&gt;Επώνυμο&lt;/th&gt;
+      &lt;th&gt;Ηλικία&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Μαρία&lt;/td&gt;
+      &lt;td&gt;Γεωργίου&lt;/td&gt;
+      &lt;td style=&quot;font-weight: bold; color: red;&quot;&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ιάκωβος&lt;/td&gt;
+      &lt;td&gt;Παπαπέτρου&lt;/td&gt;
+      &lt;td style=&quot;font-weight: bold; color: red;&quot;&gt;35&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex2">
+  <div class="head">
+    <h2><span class="num">3</span> cities <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Cities&lt;/title&gt;
+  &lt;style&gt;
+    table { width: 500px; margin: 20px auto; border-collapse: collapse; }
+    th { color: white; text-align: left; font-size: 32px; padding: 15px 20px; }
+    td { padding: 20px 0; }
+    .london { background-color: blue; }
+    .capetown { background-color: red; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;london&quot;&gt;London&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;London is the capital of England.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;capetown&quot;&gt;Cape Town&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cape Town is the capital of South Africa.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex3">
+  <div class="head">
+    <h2><span class="num">4</span> paragrathos-allazei-style <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;style&gt;
+    p.center {
+      color: red;
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: 14px;
+      text-align: center;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class=&quot;center&quot;&gt;Επικεφαλίδα&lt;/h1&gt;
+  &lt;p class=&quot;center&quot;&gt;Η Παράγραφος αλλάζει στυλ.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex4">
+  <div class="head">
+    <h2><span class="num">5</span> video-apo-ton-ypologisti <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  <p class="note">⚠ Η διαδρομή file:///Users/Alex/... αφορά τον υπολογιστή του Alex. Αλλάξτε την με τη δική σας.</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Ενσωμάτωση Βίντεο σε Ιστοσελίδα&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Ενσωμάτωση Βίντεο σε Ιστοσελίδα&lt;/h1&gt;
+  &lt;video id=&quot;video&quot; width=&quot;540&quot; src=&quot;file:///Users/Alex/Movies/examvideo.mp4&quot;&gt;&lt;/video&gt;
+  &lt;br&gt;
+  &lt;button onclick=&quot;playPause()&quot;&gt;Αναπαραγωγή/Παύση&lt;/button&gt;
+
+  &lt;script&gt;
+    function playPause() {
+      var video = document.getElementById(&quot;video&quot;);
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex5">
+  <div class="head">
+    <h2><span class="num">6</span> video-apo-youtube <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Video απο το YouTube&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt; ενσωμάτωση βίντεο από το ίντερνετ&lt;/h1&gt;
+  &lt;iframe width=&quot;600&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/r7WI4A8N8dA?si=YhpqwcwhEhQxVOGW&quot;&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex6">
+  <div class="head">
+    <h2><span class="num">7</span> photografia-megethos <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  <p class="note">⚠ Η διαδρομή file:///Users/Alex/... αφορά τον υπολογιστή του Alex. Αλλάξτε την με τη δική σας.</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Ενσωμάτωση φωτογραφίας σε ιστοσελίδα&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Ενσωμάτωση φωτογραφίας σε ιστοσελίδα&lt;/h1&gt;
+  &lt;button onclick=&quot;resize(2)&quot;&gt;Μεγαλο μεγεθος&lt;/button&gt;
+  &lt;button onclick=&quot;resize(1)&quot;&gt;Κανονικό μέγεθος&lt;/button&gt;
+  &lt;br&gt;&lt;br&gt;
+  &lt;img src=&quot;file:///Users/Alex/Pictures/photo.jpg&quot; id=&quot;photo&quot; width=&quot;300&quot;&gt;
+  &lt;script&gt;
+    function resize(k){
+      document.getElementById(&quot;photo&quot;).width=300*k;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex7">
+  <div class="head">
+    <h2><span class="num">9</span> svg-dianismatiko-grafiko <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  <p class="note">⚠ Η διαδρομή file:///Users/Alex/... αφορά τον υπολογιστή του Alex. Αλλάξτε την με τη δική σας.</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;el&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Διανυσματικά Γραφικά&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      text-align: center;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Διανυσματικά Γραφικά&lt;/h1&gt;
+  &lt;img src=&quot;file:///Users/Alex/Pictures/vectorpaint.svg&quot; alt=&quot;Διανυσματικό γραφικό&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex8">
+  <div class="head">
+    <h2><span class="num">10</span> hxos-me-photo <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;html&gt;
+&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+  &lt;h1&gt;Αναπαραγωγή Ήχου&lt;/h1&gt;
+  &lt;img src=&quot;photo.jpg&quot;&gt;
+  &lt;br&gt;&lt;br&gt;
+  &lt;audio src=&quot;sound.mp3&quot; autoplay loop controls &gt;&lt;/audio&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex9">
+  <div class="head">
+    <h2><span class="num">11</span> svg-kykloi <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Επικαλυπτόμενοι κύκλοι SVG&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Επικαλυπτόμενοι κύκλοι SVG&lt;/h1&gt;
+  &lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
+    &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;45&quot; stroke=&quot;green&quot; stroke-width=&quot;3&quot; fill=&quot;yellow&quot; /&gt;
+    &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;30&quot; stroke=&quot;red&quot; stroke-width=&quot;2&quot; fill=&quot;blue&quot; /&gt;
+    &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;15&quot; stroke=&quot;red&quot; stroke-width=&quot;2&quot; fill=&quot;gray&quot; /&gt;
+  &lt;/svg&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex10">
+  <div class="head">
+    <h2><span class="num">12</span> geolocation <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Γεωγραφική Θέση&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Γεωγραφική Θέση&lt;/h1&gt;
+  &lt;button onclick=&quot;getLocation()&quot;&gt;Δείξε τις συντεταγμένες&lt;/button&gt;
+  &lt;p id=&quot;out&quot;&gt;&lt;/p&gt;
+  &lt;script&gt;
+    function getLocation() {
+      navigator.geolocation.getCurrentPosition(show);
+    }
+    function show(position) {
+      document.getElementById(&quot;out&quot;).innerHTML =
+        &quot;Γεωγραφικό πλάτος: &quot; + position.coords.latitude +
+        &quot;&lt;br&gt;Γεωγραφικό μήκος: &quot; + position.coords.longitude;
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex11">
+  <div class="head">
+    <h2><span class="num">13</span> diktis-mazas-somatos <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt; Δείκτης Μάζας Σώματος&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Βάρος (kg): &lt;input type=&quot;text&quot; id=&quot;w&quot;&gt;&lt;br&gt;
+  Ύψος (m): &lt;input type=&quot;text&quot; id=&quot;h&quot;&gt;&lt;br&gt;
+  &lt;button onclick=&quot;go()&quot;&gt;Δ.Μ.Σ.&lt;/button&gt;
+  &lt;script&gt;
+    function dms(w, h) {
+      var d = w / (h * h);
+      var t;
+      if (d &lt; 18.5) t = &quot;Ελλιποβαρής&quot;;
+      else if (d &lt; 25) t = &quot;Φυσιολογικός&quot;;
+      else if (d &lt; 30) t = &quot;Υπέρβαρος&quot;;
+      else t = &quot;Παχύσαρκος&quot;;
+      return &quot;ΔΜΣ = &quot; + d.toFixed(1) + &quot; : &quot; + t;
+    }
+    function go() {
+      var w = Number(document.getElementById(&quot;w&quot;).value);
+      var h = Number(document.getElementById(&quot;h&quot;).value);
+      alert(dms(w, h));
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex12">
+  <div class="head">
+    <h2><span class="num">14</span> trigono <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt; Τρίγωνο&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Γωνία 1: &lt;input type=&quot;text&quot; id=&quot;a&quot;&gt;&lt;br&gt;
+  Γωνία 2: &lt;input type=&quot;text&quot; id=&quot;b&quot;&gt;&lt;br&gt;
+  Γωνία 3: &lt;input type=&quot;text&quot; id=&quot;c&quot;&gt;&lt;br&gt;
+  &lt;button onclick=&quot;tri()&quot;&gt;Τρίγωνο&lt;/button&gt;
+  &lt;script&gt;
+    function tri() {
+      var a = Number(document.getElementById(&quot;a&quot;).value);
+      var b = Number(document.getElementById(&quot;b&quot;).value);
+      var c = Number(document.getElementById(&quot;c&quot;).value);
+      if (a + b + c != 180) {
+        alert(&quot;Όχι Τρίγωνο&quot;);
+      } else if (a == b &amp;&amp; b == c) {
+        alert(&quot;Ισόπλευρο&quot;); // και οι 3 ίσες
+      } else if (a == b || b == c || a == c) {
+        alert(&quot;Ισοσκελές&quot;); // μόνο 2 ίσες
+      } else {
+        alert(&quot;Σκαληνό&quot;); // όλες διαφορετικές
+      }
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex13">
+  <div class="head">
+    <h2><span class="num">15</span> plaisio-me-minima <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt; Ονοματεπώνυμο&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;input type=&quot;text&quot; id=&quot;t&quot; value=&quot;Γράψτε εδώ το ονοματεπώνυμό σας&quot;
+         onfocus=&quot;mpika()&quot; onfocusout=&quot;vgika()&quot;&gt;
+  &lt;script&gt;
+    var msg = &quot;Γράψτε εδώ το ονοματεπώνυμό σας&quot;;
+    var t = document.getElementById(&quot;t&quot;);
+    function mpika() { if (t.value == msg) { t.value = &quot;&quot;; } }
+    function vgika() { if (t.value == &quot;&quot;) { t.value = msg; } }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex14">
+  <div class="head">
+    <h2><span class="num">16</span> celsium-to-F <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt; Μετατροπή Θερμοκρασίας&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;input type=&quot;text&quot; id=&quot;t&quot; value=&quot;0&quot;&gt;&lt;br&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;m&quot; id=&quot;fc&quot;&gt; F-&gt;C
+  &lt;input type=&quot;radio&quot; name=&quot;m&quot; id=&quot;cf&quot; checked&gt; C-&gt;F&lt;br&gt;
+  &lt;button onclick=&quot;go()&quot;&gt;Μετατροπή&lt;/button&gt;
+  &lt;script&gt;
+    function cToF(c) { return c * 1.8 + 32; }
+    function fToC(f) { return 0.56 * (f - 32); }
+    function go() {
+      var x = Number(document.getElementById(&quot;t&quot;).value);
+      if (document.getElementById(&quot;cf&quot;).checked) {
+        alert(x + &quot; °C = &quot; + cToF(x) + &quot; °F&quot;);
+      } else {
+        alert(x + &quot; °F = &quot; + fToC(x) + &quot; °C&quot;);
+      }
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex15">
+  <div class="head">
+    <h2><span class="num">17</span> forma-me-post <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt; Προσωπικά Στοιχεία&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form action=&quot;insert_page.php&quot; method=&quot;post&quot;&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;Προσωπικά Στοιχεία:&lt;/legend&gt;
+      Όνομα:&lt;br&gt;
+      &lt;input type=&quot;text&quot; name=&quot;onoma&quot;&gt;&lt;br&gt;
+      Επώνυμο:&lt;br&gt;
+      &lt;input type=&quot;text&quot; name=&quot;eponymo&quot;&gt;&lt;br&gt;
+      Φύλο:
+      &lt;input type=&quot;radio&quot; name=&quot;fylo&quot; value=&quot;Άντρας&quot; checked&gt; Άντρας
+      &lt;input type=&quot;radio&quot; name=&quot;fylo&quot; value=&quot;Γυναίκα&quot;&gt; Γυναίκα&lt;br&gt;&lt;br&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Καταχώρηση&quot;&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex16">
+  <div class="head">
+    <h2><span class="num">18</span> username-pass-check <span class="lang">HTML</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt; Είσοδος στο σύστημα&lt;/title&gt;
+  &lt;script&gt;
+    // Καλείται πριν σταλεί η φόρμα. return false = δεν στέλνεται
+    function check() {
+      var u = document.myForm.username.value;
+      var p = document.myForm.passwd.value;
+      if (u == &quot;&quot; || p == &quot;&quot;) {
+        alert(&quot;Συμπληρώστε όνομα χρήστη και συνθηματικό&quot;);
+        return false;
+      }
+      return true;
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form name=&quot;myForm&quot; action=&quot;/action_page.php&quot; method=&quot;post&quot;
+        onsubmit=&quot;return check()&quot;&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;Είσοδος Χρήστη:&lt;/legend&gt;&lt;br&gt;
+      Όνομα Χρήστη:&lt;br&gt; &lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;&quot;&gt;&lt;br&gt;
+      Συνθηματικό:&lt;br&gt;
+      &lt;input type=&quot;password&quot; name=&quot;passwd&quot; value=&quot;&quot;&gt;&lt;br&gt;
+      &lt;br&gt;&lt;br&gt;
+      &lt;input type=&quot;submit&quot; value=&quot;Είσοδος&quot;&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="card" id="ex17">
+  <div class="head">
+    <h2><span class="num">19</span> companydatabase <span class="lang">SQL</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>-- Δημιουργία βάσης δεδομένων Company
+CREATE DATABASE IF NOT EXISTS company
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE company;
+
+-- Δημιουργία πίνακα Customers
+DROP TABLE IF EXISTS Customers;
+
+CREATE TABLE Customers (
+  id        INT AUTO_INCREMENT PRIMARY KEY,
+  FirstName VARCHAR(50)  NOT NULL,
+  Lastname  VARCHAR(50)  NOT NULL,
+  email     VARCHAR(100) NOT NULL UNIQUE,
+  Age       INT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_unicode_ci;
+
+-- Εισαγωγή εγγραφών (όπως στον πίνακα της άσκησης)
+INSERT INTO Customers (FirstName, Lastname, email, Age)
+VALUES
+  (&#x27;Παπαδόπουλος&#x27;, &#x27;Κώστας&#x27;,  &#x27;papkostas@gmail.com&#x27;, 35),
+  (&#x27;Γεωργίου&#x27;,     &#x27;Νικόλαος&#x27;, &#x27;gnik@yahoo.gr&#x27;,       42),
+  (&#x27;Καρυστινού&#x27;,   &#x27;Ελπίδα&#x27;,   &#x27;elpid202@gail.com&#x27;,   22);</code></pre>
+</section>
+<section class="card" id="ex18">
+  <div class="head">
+    <h2><span class="num">19</span> customer <span class="lang">PHP</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;?php
+// Στοιχεία σύνδεσης (προεπιλογές XAMPP/WAMP)
+$servername = &quot;localhost&quot;;
+$username   = &quot;root&quot;;
+$password   = &quot;&quot;;
+$dbname     = &quot;company&quot;;
+
+// 1. Άνοιγμα σύνδεσης με τη βάση δεδομένων Company
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+if (!$conn) {
+    die(&quot;Αποτυχία σύνδεσης: &quot; . mysqli_connect_error());
+}
+
+mysqli_set_charset($conn, &quot;utf8mb4&quot;);
+header(&quot;Content-Type: text/html; charset=utf-8&quot;);
+
+// 2. Αναζήτηση του πελάτη με το συγκεκριμένο email
+$email = &quot;papkostas@gmail.com&quot;;
+$sql = &quot;SELECT FirstName, Lastname FROM Customers WHERE email = &#x27;$email&#x27;&quot;;
+$result = mysqli_query($conn, $sql);
+
+// 3. Εμφάνιση ονόματος και επιθέτου με echo
+if (mysqli_num_rows($result) &gt; 0) {
+    $row = mysqli_fetch_assoc($result);
+    echo &quot;Επίθετο: &quot; . $row[&quot;FirstName&quot;] . &quot;&lt;br&gt;&quot;;
+    echo &quot;Όνομα: &quot; . $row[&quot;Lastname&quot;];
+} else {
+    echo &quot;Δεν βρέθηκε πελάτης με email $email&quot;;
+}
+
+mysqli_close($conn);
+?&gt;</code></pre>
+</section>
+<section class="card" id="ex19">
+  <div class="head">
+    <h2><span class="num">20</span> php-isagogi-me-post <span class="lang">PHP</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;?php
+$servername = &quot;localhost&quot;;
+$username = &quot;user1&quot;;
+$password = &quot;passwd&quot;;
+$database = &quot;company&quot;;
+
+// Σύνδεση με τη βάση δεδομένων
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+// Παίρνω τις τιμές που ήρθαν με POST
+$epitheto = $_POST[&quot;Epitheto&quot;];
+$onoma = $_POST[&quot;Onoma&quot;];
+$email = $_POST[&quot;email&quot;];
+$hlikia = $_POST[&quot;Hlikia&quot;];
+
+// Εισαγωγή νέας εγγραφής
+$sql = &quot;INSERT INTO Customers (FirstName, Lastname, email, Age)
+VALUES (&#x27;$onoma&#x27;, &#x27;$epitheto&#x27;, &#x27;$email&#x27;, $hlikia)&quot;;
+
+// Η mysqli_query επιστρέφει true αν πέτυχε
+if (mysqli_query($conn, $sql)) {
+    echo &quot;Η εγγραφή καταχωρήθηκε με επιτυχία&quot;;
+} else {
+    echo &quot;Αποτυχία καταχώρησης&quot;;
+}
+
+mysqli_close($conn);
+?&gt;</code></pre>
+</section>
+<section class="card" id="ex20">
+  <div class="head">
+    <h2><span class="num">25</span> klasi-roloi <span class="lang">PHP</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;?php
+date_default_timezone_set(&#x27;Europe/Athens&#x27;);
+
+class roloi {
+    public $wr;
+    public $lep;
+    public $deft;
+
+    // Κατασκευαστής: έλεγχος εγκυρότητας, αλλιώς 0
+    function __construct($w, $l, $d) {
+        $this-&gt;wr   = ($w &gt;= 0 &amp;&amp; $w &lt;= 23) ? $w : 0;
+        $this-&gt;lep  = ($l &gt;= 0 &amp;&amp; $l &lt;= 59) ? $l : 0;
+        $this-&gt;deft = ($d &gt;= 0 &amp;&amp; $d &lt;= 59) ? $d : 0;
+    }
+
+    // Εμφάνιση ω:λ:δ
+    function emfanisi() {
+        echo $this-&gt;wr . &quot;:&quot; . $this-&gt;lep . &quot;:&quot; . $this-&gt;deft;
+    }
+
+    // Συνολικά δευτερόλεπτα
+    function deftera() {
+        return $this-&gt;wr * 3600 + $this-&gt;lep * 60 + $this-&gt;deft;
+    }
+}
+
+$r = new roloi((int)date(&#x27;H&#x27;), (int)date(&#x27;i&#x27;), (int)date(&#x27;s&#x27;));
+$r-&gt;emfanisi();
+echo &quot;&lt;br&gt;Δευτερόλεπτα: &quot; . $r-&gt;deftera();
+?&gt;</code></pre>
+</section>
+<section class="card" id="ex21">
+  <div class="head">
+    <h2><span class="num">26</span> klasi-metr <span class="lang">PHP</span></h2>
+    <button type="button" class="copy" onclick="copyCode(this)">Αντιγραφή</button>
+  </div>
+  
+  <pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;?php
+class metr {
+    private $i;                    // ιδιωτική ιδιότητα
+    public static $ano  = 10;      // ιδιότητες κλάσης (static)
+    public static $kato = 0;
+
+    // Κατασκευαστής: η τιμή μένει μέσα στα όρια
+    function __construct($t) {
+        if ($t &gt; self::$ano) $this-&gt;i = self::$ano;
+        elseif ($t &lt; self::$kato) $this-&gt;i = self::$kato;
+        else $this-&gt;i = $t;
+    }
+
+    function auxisi() {
+        if ($this-&gt;i &lt; self::$ano) $this-&gt;i++;
+    }
+
+    function meiosi() {
+        if ($this-&gt;i &gt; self::$kato) $this-&gt;i--;
+    }
+
+    function ektyposi() {
+        echo $this-&gt;i;
+    }
+}
+
+$m = new metr(5);
+$m-&gt;auxisi();
+$m-&gt;ektyposi(); // 6
+?&gt;</code></pre>
+</section>
+</main>
+<script>
+function copyCode(btn) {
+  var text = btn.parentNode.parentNode.getElementsByTagName("pre")[0].innerText;
+  function ok() {
+    var old = btn.innerHTML;
+    btn.innerHTML = "Αντιγράφηκε ✓";
+    btn.className = "copy done";
+    setTimeout(function () { btn.innerHTML = old; btn.className = "copy"; }, 1800);
+  }
+  function fallback() {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.top = "0";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try { document.execCommand("copy"); ok(); } catch (e) { alert("Επιλέξτε το κείμενο με το ποντίκι και πατήστε Ctrl+C."); }
+    document.body.removeChild(ta);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(ok, fallback);
+  } else {
+    fallback();
+  }
+}
+</script>
+</body>
+</html>
